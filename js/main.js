@@ -394,7 +394,7 @@ function searchContacts(ele) {
 
 
 function inputNamevalidation(){
-  var pattern = /^\w{2,50}$/;
+  var pattern = /(^[A-Za-z]{3,16})([ ]{0,1})([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})/;
   var vaildName = new RegExp(pattern,"g")
    if (vaildName.test(contactName.value)) {
     contactName.classList.add("is-valid")
