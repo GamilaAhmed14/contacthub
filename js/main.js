@@ -213,8 +213,8 @@ function onUpdateClick() {
    displayContact(allContacts);
    displayFavouriteQuickAcress();
     displayemergencyQuickAccess();
-   cleanForm()
-  toggleBtnForms()
+   cleanForm();
+  toggleBtnForms();
   closeContactModal();
   totalfavoritesHandler();
   totalEmergencyHandler();
@@ -374,7 +374,8 @@ function closeContactModal() {
   contactModal.classList.add("d-none")
 }
 closeModalBtn.addEventListener("click",function() {
-    contactModal.classList.add("d-none")
+    contactModal.classList.add("d-none");
+     cleanForm();
   })
 
 
